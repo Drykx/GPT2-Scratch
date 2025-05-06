@@ -13,11 +13,11 @@ In my experience, these are among the most comprehensive and effective learning 
 
 ## 🧠 Goals
 
-- Understand transformer architecture at a low level in hope to improve it
-- Build all key GPT-2 components manually to improve my coding
-- Train to reply research papers into code
-- Insipire and learn from industry experts for the good practices
-- Practice debugging and scaling ML models from first principles
+- Deepen understanding of transformer architecture to explore improvements  
+- Rebuild GPT-2 components to sharpen coding skills  
+- Practice turning research papers into code  
+- Learn best practices from expert implementations  
+- Strengthen debugging and scaling from first principles  
 
 ## 🔧 Tools Used
 

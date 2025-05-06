@@ -6,22 +6,22 @@ This project is a personal implementation of GPT-2 from scratch using PyTorch. I
 
 To support this learning journey, I relied on two excellent resources:
 
-- 📖 [*Pattern Recognition and Machine Learning* by Christopher M. Bishop](https://www.bishopbook.com/) – Chapters 6–13
-- 🎥 [Neural Networks: Zero to Hero by Andrej Karpathy](https://www.youtube.com/playlist?list=PLpPXw4zFa0uJ6DfbMNaMh2-1YfMcXj7oH)
+- 📖 [*Deep Learning: Foundation and Concepts* by Christopher M. Bishop](https://www.bishopbook.com/) – Chapters 6–13
+- 🎥 [Neural Networks: Zero to Hero by Andrej Karpathy](https://karpathy.ai/zero-to-hero.html)
 
 In my experience, these are among the most comprehensive and effective learning materials available. I highly recommend them to both beginners and intermediate learners. Even if you’ve previously worked with LLMs, Karpathy’s clear explanations and hands-on approach offer valuable insights that bridge theory and implementation.
 
 ## 🧠 Goals
 
-- Understand transformer architecture at a low level  
-- Build all key GPT-2 components manually  
-- Train a simple GPT-2-like model on real text data  
-- Practice debugging and scaling ML models from first principles  
+- Understand transformer architecture at a low level in hope to improve it
+- Build all key GPT-2 components manually to improve my coding
+- Train to reply research papers into code
+- Insipire and learn from industry experts for the good practices
+- Practice debugging and scaling ML models from first principles
 
 ## 🔧 Tools Used
 
 - Python & PyTorch  
-- Jupyter Notebooks  
 - Hugging Face Datasets (for experimentation)  
 - AWS (for compute resources)  
 

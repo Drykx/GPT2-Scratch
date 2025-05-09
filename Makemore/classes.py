@@ -2,6 +2,8 @@ import numpy
 import torch
 import torch.nn.functional as F
 
+g = torch.Generator().manual_seed(42) # Repoducibility
+
 class Linear:
 
     def __init__(self,fan_in,fan_out,bias=True):
@@ -66,7 +68,6 @@ class Tanh():
     def parameters(self):
         return []
     
-# ---------
 
 class Embedding():
 
@@ -79,8 +80,6 @@ class Embedding():
 
     def parameters(self):
         return [self.weight]
-
-# ---------
 
 class FlattenConsecutive():
 
@@ -98,7 +97,6 @@ class FlattenConsecutive():
     def parameters(self):
         return([])
     
-# ---------
 class Sequential():
 
     def __init__(self,layers):

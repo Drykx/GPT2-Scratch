@@ -9,7 +9,6 @@ import unicodedata
 # -------------------------------------
 
 def get_stats(ids: list):
-    """ """
     stats = {} 
     for pairs in zip(ids,ids[1:]):
         stats[pairs] = stats.get(pairs,0) + 1 # Increase the value at "pairs" by 1 
@@ -85,7 +84,7 @@ class Tokenizer:
         raise NotImplementedError
 
     def _build_vocab(self):
-        # vocab is simply and deterministically derived from merges
+        # Vocab is simply and deterministically derived from merges
         vocab = {idx: bytes([idx]) for idx in range(self.length_list_token)}
         for (p0, p1), idx in self.merges.items():
             vocab[idx] = vocab[p0] + vocab[p1]
@@ -165,7 +164,7 @@ class Tokenizer:
 
 
 class BasicTokenizer(Tokenizer):
-
+    """BPE Encoder"""
     def __init__(self, length_list_token = 256):
         super().__init__(length_list_token)
 
@@ -194,7 +193,6 @@ class BasicTokenizer(Tokenizer):
                 
     def encode(self, text):
         # given a string text, return the token ids
-
         text_bytes = text.encode("utf-8") # raw bytes
         ids = list(text_bytes)            # list of integers
         while len(ids) >= 2:

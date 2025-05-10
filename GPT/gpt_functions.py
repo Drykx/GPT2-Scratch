@@ -27,6 +27,10 @@ def get_batch(data: torch.Tensor, block_size: int, batch_size: int, device: str)
 
     return x,y
 
+# -------------------------------------
+# Formatting function
+# -------------------------------------
+
 def poem_formatting(text: str):
 
     # Remove unwanted prefixes
@@ -39,7 +43,6 @@ def poem_formatting(text: str):
     cleaned_lines = cleaned_lines[1:]                 # Remove the title
     poem = "\n".join(cleaned_lines).strip()           # Format back into text
     return([title,poem])
-
 
 ######################################
 #   GPT Language Model Architecture

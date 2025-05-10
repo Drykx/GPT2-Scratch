@@ -41,3 +41,8 @@ Drykx/
 ```
 pip install -r requirements.txt
 ```
+
+## Work to finish
+
+1. Train Model on Google Cloud
+2. Fine tune the Model on a poetry dataset using LoRa

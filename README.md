@@ -25,7 +25,14 @@ In my experience, these are among the most comprehensive and effective learning 
 - Hugging Face Datasets (for experimentation)  
 - AWS (for compute resources)  
 
----
+## Structure Repo
 
-Stay tuned for future updates, including training logs, evaluation metrics, and further model refinements.
-
+├── Makemore/                   # Character-level bigram model with scalable extensions to reduce training loss
+│
+├── Tokenizer/                  # Custom Byte Pair Encoding (BPE) tokenizer implementation
+│
+├── GPT/                        # Lightweight GPT model for generating French poetry using the custom tokenizer
+│
+├── GP2T/                       # Scalable GPT-2-style model trained on 10B tokens; evaluated on HellaSwag using GPT-2 tiktoken encoding
+│
+├── requirements.txt            # Python dependencies and environment setup

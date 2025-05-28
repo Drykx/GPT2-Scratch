@@ -23,7 +23,7 @@ In my experience, these are among the most comprehensive and effective learning 
 
 - Python & PyTorch  
 - Hugging Face Datasets (for experimentation)  
-- AWS (for compute resources)  
+- Google Cloud (for compute resources)  
 
 ## 🗂️ Structure Repo
 
@@ -38,9 +38,10 @@ Drykx/
 
 ## 🚀 Getting Started
 
-The PyTorch/CUDA versions listed are for Windows, so these files will only work for Windows users. If you're using Linux or macOS, visit https://pytorch.org/get-started/locally/ to find the appropriate version for your system.
+The provided `requirements.txt` file was generated on my Windows laptop. If you're using **Linux** or **macOS**, please visit [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) to find the appropriate PyTorch version for your system and install the required packages accordingly.
 
-To install all necessary dependencies, run:
+
+To install all necessary dependencies (on Windows), run:
 ```
 pip install -r requirements.txt
 ```

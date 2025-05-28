@@ -23,7 +23,7 @@ In my experience, these are among the most comprehensive and effective learning 
 
 - Python & PyTorch  
 - Hugging Face Datasets (for experimentation)  
-- AWS (for compute resources)  
+- Google Cloud (for compute resources)  
 
 ## 🗂️ Structure Repo
 
@@ -38,6 +38,46 @@ Drykx/
 
 ## 🚀 Getting Started
 
+The provided `requirements.txt` file was generated on my Windows laptop. If you're using **Linux** or **macOS**, please visit [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/) to find the appropriate PyTorch version for your system and install the required packages accordingly.
+
+
+To install all necessary dependencies (on Windows), run:
 ```
 pip install -r requirements.txt
 ```
+## Running Training on the Cloud
+
+If you'd like to replicate the training process, you can choose from cloud platforms like **AWS**, **Azure**, or **Google Cloud**. I recommend **Google Cloud Platform (GCP)** because it offers a **$300 credit** for new users.
+
+### Here’s how to set up your training environment on Google Cloud:
+
+#### 1. Create a new project
+Log in to [Google Cloud Console](https://console.cloud.google.com/) and create a new project for your training workflow.
+
+#### 2. Set up a VM Instance
+Go to the **Compute Engine** section and create a new **VM instance**. Make sure to choose a machine type with sufficient CPU and RAM for your needs.
+
+#### 3. Request access to GPUs
+You’ll need to request a GPU quota:
+
+- Navigate to **IAM & Admin > Quotas**
+- Filter by **NVIDIA GPUs**
+- Select the desired region and request a quota increase  
+⚠️ *This process can take up to 48 hours.*
+#### 4. Create a VM with a GPU (after approval)
+
+Once your GPU quota is approved, create a VM with an attached GPU (e.g., **NVIDIA Tesla T4** or **V100**). Choose a compatible image such as the **Deep Learning VM** (which comes with pre-installed PyTorch and CUDA) to save setup time.
+
+#### 5. SSH into your VM and set up your environment
+
+- Clone your repository  
+- Set up a virtual environment *(optional but recommended)*
+- Download the dataset with:
+
+```bash
+python3 fineweb.py
+```
+#### 6. Train
+
+- Training time and performance depend on the number of GPUs and your budget.
+- Using 4 GPUs, you can expect reasonable results within about an hour.
